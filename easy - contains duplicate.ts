@@ -1,5 +1,5 @@
 /**
- * @file easy - contains duplicate.js
+ * @file easy - contains duplicate.ts
  * @description LeetCode solution for Contains Duplicate.
  * @difficulty Easy
  * @pattern Array, Hash Set
@@ -9,17 +9,8 @@
  * Space Complexity: O(n)
  */
 
-/**
- * Determines whether any value appears more than once.
- *
- * @param {number[]} nums - Values to check for duplicates.
- * @returns {boolean} Whether the input contains a duplicate value.
- *
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- */
-function containsDuplicates(nums) {
-  const seen = new Set();
+function containsDuplicates(nums: number[]): boolean {
+  const seen = new Set<number>();
 
   for (const num of nums) {
     if (seen.has(num)) {
