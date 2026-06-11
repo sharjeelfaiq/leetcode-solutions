@@ -1,12 +1,11 @@
 /**
- * @file easy - contains duplicate.ts
- * @description LeetCode solution for Contains Duplicate.
- * @difficulty Easy
- * @pattern Array, Hash Set
- * @source https://leetcode.com/problems/contains-duplicate/
+ * Contains Duplicate (Easy)
  *
- * Time Complexity: O(n)
- * Space Complexity: O(n)
+ * Pattern: Array, Hash Set
+ * Source: https://leetcode.com/problems/contains-duplicate/
+ *
+ * Time: O(n)
+ * Space: O(n)
  */
 
 function containsDuplicates(nums: number[]): boolean {

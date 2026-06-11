@@ -1,15 +1,14 @@
 /**
- * @file easy - two sum.ts
- * @description LeetCode solution for Two Sum.
- * @difficulty Easy
- * @pattern Array, Hash Map
- * @source https://leetcode.com/problems/two-sum/
+ * Two Sum (Easy)
  *
- * Time Complexity: O(n)
- * Space Complexity: O(n)
+ * Pattern: Array, Hash Map
+ * Source: https://leetcode.com/problems/two-sum/
+ *
+ * Time: O(n)
+ * Space: O(n)
  */
 
-function twoSum(nums: number[], target: number): number[] | undefined {
+function twoSum(nums: number[], target: number): number[] {
   const map = new Map<number, number>();
 
   for (let i = 0; i < nums.length; i++) {
@@ -21,6 +20,8 @@ function twoSum(nums: number[], target: number): number[] | undefined {
 
     map.set(nums[i], i);
   }
+
+  return [];
 }
 
 const output = twoSum([2, 5, 11, 15, 7], 9);
