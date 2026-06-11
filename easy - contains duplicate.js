@@ -1,30 +1,22 @@
 /**
- * Contains Duplicate
- * Difficulty: Easy
- * URL: https://leetcode.com/problems/contains-duplicate/
- * Pattern: Array, Hash Set
- * Statement:
- *   Given an integer array nums, return true if any value appears at least twice in the array, and false if every element is distinct.
- * Examples:
- *   Input: nums = [1,2,3,1]
- *   Output: true
- *   
- *   Input: nums = [1,2,3,4]
- *   Output: false
- *   
- *   Input: nums = [1,1,1,3,3,4,3,2,4,2]
- *   Output: true
- * Constraints:
- *   Official numeric constraints were not present in the source Markdown.
- * Inferred approach: Hash-set duplicate detection
- * Inferred time complexity: O(n)
- * Inferred space complexity: O(n)
+ * @file easy - contains duplicate.js
+ * @description LeetCode solution for Contains Duplicate.
+ * @difficulty Easy
+ * @pattern Array, Hash Set
+ * @source https://leetcode.com/problems/contains-duplicate/
+ *
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
  */
 
-// Original solution preserved below.
 /**
- * @param {number[]} nums
- * @return {boolean}
+ * Determines whether any value appears more than once.
+ *
+ * @param {number[]} nums - Values to check for duplicates.
+ * @returns {boolean} Whether the input contains a duplicate value.
+ *
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
  */
 function containsDuplicates(nums) {
   const seen = new Set();

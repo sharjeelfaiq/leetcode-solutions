@@ -1,29 +1,24 @@
 /**
- * Two Sum
- * Difficulty: Easy
- * URL: https://leetcode.com/problems/two-sum/
- * Pattern: Array, Hash Map
- * Statement:
- *   Given an array nums and an integer target, return the indices of the two numbers whose sum equals target.
- * Examples:
- *   Input: nums = [2,5,11,15,7], target = 9
- *   Output: [0,4]
- *   
- *   Input: nums = [3,2,4], target = 6
- *   Output: [1,2]
- *   
- *   Input: nums = [3,3], target = 6
- *   Output: [0,1]
- * Constraints:
- *   Exactly one valid answer exists.
- *   Do not use the same element twice.
- *   Official numeric constraints were not present in the source Markdown.
- * Inferred approach: Hash-map complement lookup
- * Inferred time complexity: O(n)
- * Inferred space complexity: O(n)
+ * @file easy - two sum.js
+ * @description LeetCode solution for Two Sum.
+ * @difficulty Easy
+ * @pattern Array, Hash Map
+ * @source https://leetcode.com/problems/two-sum/
+ *
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
  */
 
-// Original solution preserved below.
+/**
+ * Returns the indices of two values whose sum equals the target.
+ *
+ * @param {number[]} nums - Values to search for a matching pair.
+ * @param {number} target - Required sum of the two values.
+ * @returns {number[]} Indices of the matching values.
+ *
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ */
 function twoSum(nums, target) {
   const map = new Map();
 
