@@ -1,31 +1,13 @@
 # LeetCode Solutions
 
-Solutions are written in TypeScript.
+Solutions are written in JavaScript.
 
-Last updated: 2026-06-16 (UTC)
+Last updated: 2026-06-24 (UTC)
 
-Total: 2 | Easy: 2 | Medium: 0 | Hard: 0 | Unknown: 0
+Total: 3 | Easy: 3 | Medium: 0 | Hard: 0 | Unknown: 0
 
 | Problem | Difficulty | Pattern | Time | Space |
 | --- | --- | --- | --- | --- |
-| [Contains Duplicate](problems/contains%20duplicate.ts) | Easy | Array, Hash Set | O(n) | O(n) |
-| [Two Sum](problems/two%20sum.ts) | Easy | Array, Hash Map | O(n) | O(n) |
-| Valid Anagram | Easy | String, Hash Map | O(n) | O(1) |
-| Best Time to Buy and Sell Stock | Easy | Array, Greedy | O(n) | O(1) |
-| Maximum Subarray | Easy | Array, Dynamic Programming | O(n) | O(1) |
-| Product of Array Except Self | Easy | Array, Prefix Sum | O(n) | O(1) |
-| Merge Sorted Array | Easy | Array, Two Pointers | O(m + n) | O(1) |
-| Remove Duplicates from Sorted Array | Easy | Array, Two Pointers | O(n) | O(1) |
-| Intersection of Two Arrays | Easy | Array, Hash Set | O(n + m) | O(n) |
-| Majority Element | Easy | Array, Boyer-Moore | O(n) | O(1) |
-| Move Zeroes | Easy | Array, Two Pointers | O(n) | O(1) |
-| Plus One | Easy | Array, Math | O(n) | O(1) |
-| Single Number | Easy | Array, Bit Manipulation | O(n) | O(1) |
-| Missing Number | Easy | Array, Math | O(n) | O(1) |
-| Climbing Stairs | Easy | Dynamic Programming | O(n) | O(1) |
-| Pascal’s Triangle | Easy | Array, Dynamic Programming | O(numRows^2) | O(numRows^2) |
-| Reverse String | Easy | String, Two Pointers | O(n) | O(1) |
-| Valid Palindrome | Easy | String, Two Pointers | O(n) | O(1) |
-| Implement strStr() | Easy | String, Two Pointers | O(n * m) | O(1) |
-| First Unique Character in a String | Easy | String, Hash Map | O(n) | O(1) |
-| Ransom Note | Easy | String, Hash Map | O(n + m) | O(1) |
+| [Add Two Integers](problems/add%20two%20integers.js) | Easy | Math | O(1) | O(1) |
+| [Build Array from Permutation](problems/build%20array%20from%20permutation.js) | Easy | Array, Simulation | O(n) | O(n) |
+| [Concatenation of Array](problems/concatenation%20of%20array.js) | Easy | Array | O(n) | O(n) |
