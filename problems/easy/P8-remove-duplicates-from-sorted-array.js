@@ -13,16 +13,16 @@ function removeDuplicates(nums) {
     return 0;
   }
 
-  let insertIndex = 1;
+  let write = 1;
 
-  for (let i = 1; i < nums.length; i++) {
-    if (nums[i] !== nums[i - 1]) {
-      nums[insertIndex] = nums[i];
-      insertIndex++;
+  for (let read = 1; read < nums.length; read++) {
+    if (nums[read] !== nums[read - 1]) {
+      nums[write] = nums[read];
+      write++;
     }
   }
 
-  return insertIndex;
+  return write;
 }
 
 const output = removeDuplicates([1, 1, 2]);

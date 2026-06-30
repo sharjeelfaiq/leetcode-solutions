@@ -9,6 +9,10 @@
  */
 
 function isPalindrome(s) {
+  const isAlphaNumeric = (char) => {
+    return /^[a-z0-9]$/i.test(char);
+  };
+
   let left = 0;
   let right = s.length - 1;
 
@@ -30,10 +34,6 @@ function isPalindrome(s) {
   }
 
   return true;
-}
-
-function isAlphaNumeric(char) {
-  return /^[a-z0-9]$/i.test(char);
 }
 
 const output = isPalindrome("A man, a plan, a canal: Panama");
