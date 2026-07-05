@@ -1,15 +1,15 @@
 /**
- * Roman to Integer (Easy)
+ * r to Integer (Easy)
  *
  * Pattern: Hash Table, String
- * Source: https://leetcode.com/problems/roman-to-integer/
+ * Source: https://leetcode.com/problems/r-to-integer/
  *
  * Time: O(n)
  * Space: O(1)
  */
 
 function romanToInt(s) {
-  const values = {
+  const map = {
     I: 1,
     V: 5,
     X: 10,
@@ -18,19 +18,18 @@ function romanToInt(s) {
     D: 500,
     M: 1000,
   };
+
   let total = 0;
-  let previous = 0;
 
-  for (let i = s.length - 1; i >= 0; i--) {
-    const current = values[s[i]];
+  for (let i = 0; i < s.length; i++) {
+    const current = map[s[i]];
+    const next = map[s[i + 1]];
 
-    if (current < previous) {
+    if (next && next > current) {
       total -= current;
     } else {
       total += current;
     }
-
-    previous = current;
   }
 
   return total;
