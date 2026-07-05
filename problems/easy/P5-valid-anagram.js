@@ -9,26 +9,27 @@
  */
 
 function isAnagram(s, t) {
-  if (s.length !== t.length) {
-    return false;
+  if (s.length !== t.length) return false;
+
+  s = s.toLowerCase();
+  t = t.toLowerCase();
+
+  const map = new Map();
+
+  for (const char of s) {
+    map.set(char, (map.get(char) || 0) + 1);
   }
 
-  const counts = new Array(26).fill(0);
-  const baseCode = "a".charCodeAt(0);
+  for (const char of t) {
+    if (!map.has(char)) return false;
 
-  for (let i = 0; i < s.length; i++) {
-    counts[s.charCodeAt(i) - baseCode]++;
-    counts[t.charCodeAt(i) - baseCode]--;
-  }
+    map.set(char, map.get(char) - 1);
 
-  for (const count of counts) {
-    if (count !== 0) {
-      return false;
-    }
+    if (map.get(char) < 0) return false;
   }
 
   return true;
 }
 
-const output = isAnagram("anagram", "nagaram");
+const output = isAnagram("Anagram", "Nagaram");
 console.log(output);
