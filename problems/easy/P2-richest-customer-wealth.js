@@ -11,11 +11,11 @@
 function maximumWealth(accounts) {
   let maxWealth = 0;
 
-  for (const customer of accounts) {
+  for (const account of accounts) {
     let wealth = 0;
 
-    for (const balance of customer) {
-      wealth += balance;
+    for (const amount of account) {
+      wealth += amount;
     }
 
     maxWealth = Math.max(maxWealth, wealth);
