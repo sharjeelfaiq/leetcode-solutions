@@ -9,8 +9,6 @@
  */
 
 function isAnagram(s, t) {
-  if (s.length !== t.length) return false;
-
   s = s.toLowerCase();
   t = t.toLowerCase();
 
@@ -31,5 +29,5 @@ function isAnagram(s, t) {
   return true;
 }
 
-const output = isAnagram("Anagram", "Nagaram");
+const output = isAnagram("Earth", "Heart");
 console.log(output);
