@@ -1,8 +1,8 @@
 /**
- * r to Integer (Easy)
+ * Roman to Integer (Easy)
  *
  * Pattern: Hash Table, String
- * Source: https://leetcode.com/problems/r-to-integer/
+ * Source: https://leetcode.com/problems/roman-to-integer/
  *
  * Time: O(n)
  * Space: O(1)
@@ -35,5 +35,5 @@ function romanToInt(s) {
   return total;
 }
 
-const output = romanToInt("MCMXCIV");
+const output = romanToInt("CXXX");
 console.log(output);
